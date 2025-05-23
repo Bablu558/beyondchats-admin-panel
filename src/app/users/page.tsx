@@ -1,12 +1,12 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { users } from '@/data/users';
 import UserCard from '@/components/UserCard';
 import Layout from '@/components/Layout';
 
-export default function UsersPage() {
+function UsersPageContent() {
   const searchParams = useSearchParams();
   const filter = searchParams.get('filter'); // 🟢 reads ?filter=active
   const [search, setSearch] = useState('');
@@ -32,10 +32,17 @@ export default function UsersPage() {
             <UserCard key={user.id} {...user} />
           ))
         ) : (
-          // 🆕 Show this if no users match the filter or search
           <p className="text-gray-500">No users found.</p>
         )}
       </div>
     </Layout>
+  );
+}
+
+export default function UsersPage() {
+  return (
+    <Suspense fallback={<div className="text-gray-500">Loading...</div>}>
+      <UsersPageContent />
+    </Suspense>
   );
 }
