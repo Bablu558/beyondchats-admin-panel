@@ -3,11 +3,11 @@ import { cn } from "@/lib/utils";
 export default function ChatBubble({
   sender,
   text,
-  timestamp, // ✅ timestamp aata hai prop ke through
+  timestamp, 
 }: {
   sender: string;
   text: string;
-  timestamp?: string; // ✅ optional timestamp
+  timestamp?: string; 
 }) {
   // ✅ Helper to format timestamp to readable form
   const formatTimestamp = (isoString: string) => {

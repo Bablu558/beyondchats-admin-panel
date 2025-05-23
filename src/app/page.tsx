@@ -24,14 +24,14 @@ export default function Home() {
       value: dashboardStats.avgResponseTime,
       icon: <Timer className="text-yellow-600 w-8 h-8" />,
       color: "text-yellow-600",
-      href: "/reports", // You can create this page later
+      href: "/reports", 
     },
     {
       title: "Support Tickets",
       value: dashboardStats.supportTickets,
       icon: <LifeBuoy className="text-purple-600 w-8 h-8" />,
       color: "text-purple-600",
-      href: "/tickets", // Placeholder route
+      href: "/tickets",
     },
   ];
 

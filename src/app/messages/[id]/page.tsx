@@ -14,7 +14,7 @@ type MessagePageProps = {
 };
 
 export default function MessageDetail({ params }: MessagePageProps) {
-  const { id } = use(params); // ✅ unwrap promise
+  const { id } = use(params); 
   const messageData = messages.find((msg) => msg.id === id);
   const [input, setInput] = useState("");
   const [thread, setThread] = useState(messageData?.thread || []);

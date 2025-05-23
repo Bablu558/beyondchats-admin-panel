@@ -8,7 +8,7 @@ import Layout from '@/components/Layout';
 
 function UsersPageContent() {
   const searchParams = useSearchParams();
-  const filter = searchParams.get('filter'); // 🟢 reads ?filter=active
+  const filter = searchParams.get('filter'); 
   const [search, setSearch] = useState('');
 
   const filteredUsers = users

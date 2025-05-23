@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { ReactNode, useState } from 'react';
 import clsx from 'clsx';
-import { Search, ArrowLeft } from 'lucide-react'; // You can use any icon lib
+import { Search, ArrowLeft } from 'lucide-react'; 
 
 export default function Layout({
   children,
