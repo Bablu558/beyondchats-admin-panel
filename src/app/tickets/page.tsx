@@ -18,7 +18,7 @@ export default function TicketsPage() {
               <CardHeader>
                 <CardTitle className="flex justify-between items-center">
                   <span>{msg.user}</span>
-                  <Badge variant={isResolved ? "success" : "destructive"}>
+                  <Badge variant={isResolved ? "default" : "destructive"}>
                     {isResolved ? "Resolved" : "Unresolved"}
                   </Badge>
                 </CardTitle>
