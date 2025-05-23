@@ -18,6 +18,9 @@ This is a responsive Admin Dashboard built as part of an assignment for the **Be
 ### Chat UI
 ![Chat](./public/screenshots/chat.png)
 
+### Chat UI
+![Mobile](./public/screenshots/mobile_view.png)
+
 ## ✅ Features Replicated from Demo
 
 - Interactive chat interface with conversation list and message panel
